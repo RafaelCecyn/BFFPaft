@@ -1,0 +1,19 @@
+{% extends 'molde.html'%}
+{% block head %}
+gatos
+{% endblock%}
+{% block body %}
+<div>
+    {% for c in respPoke %}
+    <h2>5 Curiosidades sobre gatos</h2>
+    <p>Frase 1: "{{respPoke.data[0]}}"</p>
+    <p>Frase 2: "{{respPoke.data[1]}}"</p>
+    <p>Frase 3: "{{respPoke.data[2]}}"</p>
+    <p>Frase 4: "{{respPoke.data[3]}}"</p>
+    <p>Frase 5: "{{respPoke.data[4]}}"</p>
+    {% endfor %}
+</div>
+{% endblock %}
+
+{% block p %} 
+{% endblock %}
